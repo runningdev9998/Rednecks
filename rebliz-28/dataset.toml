@@ -1,0 +1,14 @@
+[general]
+shuffle_caption = false
+caption_extension = '.txt'
+keep_tokens = 1
+
+[[datasets]]
+resolution = 512
+batch_size = 1
+keep_tokens = 1
+
+  [[datasets.subsets]]
+  image_dir = '/workspace/fluxgym/datasets/rebliz-28'
+  class_tokens = 'rebliz-28'
+  num_repeats = 10
